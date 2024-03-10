@@ -1,3 +1,4 @@
+// Pass an parameter in a function
 function add(a, b) {
     var result = a + b;
     console.log(result);
@@ -19,3 +20,18 @@ function sumArray(arr) {
 sumArray(arr1)
 sumArray(arr2)
 sumArray(arr3)
+
+// Argument 
+function sumAdd() {
+    console.log(arguments);
+}
+sumAdd(10, 20, 30);
+
+function addAll() {
+    var total = 0;
+    for (var x = 0; x < arguments.length; x++) {
+        total += arguments[x]
+    }
+    console.log(total);
+}
+addAll(1, 2, 3, 4,5)
